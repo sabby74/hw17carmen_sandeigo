@@ -138,3 +138,17 @@ SELECT * FROM CITY WHERE population = 91084;
 
 
 --she is in Santa Monica, California, USA
+
+UPDATE CITY
+SET name = 'Brasília'
+WHERE id = 211;
+
+
+
+
+SELECT * FROM CITY WHERE id = 211;
+--record 8------------------------
+--  id  |   name   | countrycode |     district     | population 
+-- -----+----------+-------------+------------------+------------
+--  211 | Brasília | BRA         | Distrito Federal |    1969868
+-- (1 row)
