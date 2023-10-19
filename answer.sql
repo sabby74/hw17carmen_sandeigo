@@ -109,14 +109,16 @@ WHERE countrycode = 'BRA' AND id = (SELECT capital FROM COUNTRY WHERE code = 'BR
 
 -- Clue #7: She knows we're on to her – her taxi dropped her off at the international airport, and she beat us to the boarding gates. We have one chance to catch her, we just have to know where she's heading and beat her to the landing dock.
 
+SELECT * FROM CITY WHERE population = 91084;
+
+--record 7------------------------
+--   id  |     name     | countrycode |  district  | population 
+-- ------+--------------+-------------+------------+------------
+--  4060 | Santa Monica | USA         | California |      91084
+-- (1 row)
 
 
--- Decode Carmen Sandiego's note to find out where she's headed.
 
--- Carmen mentions a city with a population of 91,085, which is likely Brasília.
--- So, she's in Brasília!
-
--- She's in Brasília!
 
 
 
@@ -135,4 +137,4 @@ WHERE countrycode = 'BRA' AND id = (SELECT capital FROM COUNTRY WHERE code = 'BR
 
 
 
--- She's in Brasília!
+--she is in Santa Monica, California, USA
